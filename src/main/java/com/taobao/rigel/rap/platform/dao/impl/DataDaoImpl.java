@@ -11,13 +11,17 @@ import java.util.Map;
 
 /**
  * Created by Bosn on 14-9-5.
+ * 
+ * 2022-05-07 by Jim: fix "this is incompatible with sql_mode=only_full_group_by"
+ * add ANY_VALUE(create_date)
+ * [MySQL错误-this is incompatible with sql_mode=only_full_group_by完美解决方案_格子衫111的博客-CSDN博客](https://blog.csdn.net/u012660464/article/details/113977173)
  */
 public class DataDaoImpl extends HibernateDaoSupport implements DataDao {
 
     public List<Map<String, Object>> getUserTrendByMonth() {
         StringBuilder sql = new StringBuilder();
         sql
-                .append("SELECT MONTH(create_date) AS month, COUNT(id) as num, create_date ")
+                .append("SELECT MONTH(create_date) AS month, COUNT(id) as num, ANY_VALUE(create_date) create_date ")
                 .append("FROM tb_user ")
                 .append("WHERE create_date BETWEEN DATE_ADD(NOW(), INTERVAL -1 YEAR) AND NOW() ")
                 .append("GROUP BY MONTH(create_date) ")
@@ -46,7 +50,7 @@ public class DataDaoImpl extends HibernateDaoSupport implements DataDao {
     public List<Map<String, Object>> getProjectTrendByMonth() {
         StringBuilder sql = new StringBuilder();
         sql
-                .append("SELECT MONTH(create_date) AS month, COUNT(id) as num, create_date ")
+                .append("SELECT MONTH(create_date) AS month, COUNT(id) as num, ANY_VALUE(create_date) create_date ")
                 .append("FROM tb_project ")
                 .append("WHERE create_date BETWEEN DATE_ADD(NOW(), INTERVAL -1 YEAR) AND NOW() ")
                 .append("GROUP BY MONTH(create_date) ")
@@ -74,7 +78,7 @@ public class DataDaoImpl extends HibernateDaoSupport implements DataDao {
     public List<Map<String, Object>> getCheckInTrendByMonth() {
         StringBuilder sql = new StringBuilder();
         sql
-                .append("SELECT MONTH(create_date) AS month, COUNT(id) as num, create_date ")
+                .append("SELECT MONTH(create_date) AS month, COUNT(id) as num, ANY_VALUE(create_date) create_date ")
                 .append("FROM tb_check_in ")
                 .append("WHERE create_date BETWEEN DATE_ADD(NOW(), INTERVAL -1 YEAR) AND NOW() ")
                 .append("GROUP BY MONTH(create_date) ")
