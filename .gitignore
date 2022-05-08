@@ -6,3 +6,7 @@ build
 *.iml
 .DS_Store
 bak
+/.settings/
+/.classpath
+/.project
+/.factorypath
