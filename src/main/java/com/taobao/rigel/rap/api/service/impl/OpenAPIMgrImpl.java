@@ -5,6 +5,7 @@ import com.taobao.rigel.rap.api.service.OpenAPIMgr;
 import com.taobao.rigel.rap.mock.bo.Rule;
 import com.taobao.rigel.rap.mock.dao.MockDao;
 import com.taobao.rigel.rap.project.bo.*;
+import com.taobao.rigel.rap.project.bo.Module;
 import com.taobao.rigel.rap.project.service.ProjectMgr;
 
 import java.util.*;

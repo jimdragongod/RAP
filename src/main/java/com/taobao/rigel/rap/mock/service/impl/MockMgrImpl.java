@@ -13,7 +13,7 @@ import com.taobao.rigel.rap.project.dao.ProjectDao;
 import com.taobao.rigel.rap.project.service.ProjectMgr;
 import nl.flotsam.xeger.Xeger;
 import org.apache.logging.log4j.LogManager;
-import sun.misc.Cache;
+// import sun.misc.Cache;
 import org.codehaus.jackson.map.util.LRUMap;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;

@@ -2,6 +2,7 @@ package com.taobao.rigel.rap.workspace.service.impl;
 
 import com.google.gson.Gson;
 import com.taobao.rigel.rap.project.bo.*;
+import com.taobao.rigel.rap.project.bo.Module;
 import com.taobao.rigel.rap.project.dao.ProjectDao;
 import com.taobao.rigel.rap.workspace.bo.CheckIn;
 import com.taobao.rigel.rap.workspace.bo.Workspace;

@@ -7,6 +7,7 @@ import com.taobao.rigel.rap.common.utils.CacheUtils;
 import com.taobao.rigel.rap.common.utils.StringUtils;
 import com.taobao.rigel.rap.common.utils.URLUtils;
 import com.taobao.rigel.rap.project.bo.*;
+import com.taobao.rigel.rap.project.bo.Module;
 import com.taobao.rigel.rap.project.dao.ProjectDao;
 import org.hibernate.*;
 import org.hibernate.criterion.Projections;

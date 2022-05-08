@@ -12,7 +12,7 @@ import com.taobao.rigel.rap.common.utils.StringUtils;
 import com.taobao.rigel.rap.common.utils.SystemVisitorLog;
 import com.taobao.rigel.rap.organization.bo.Corporation;
 import com.taobao.rigel.rap.organization.service.OrganizationMgr;
-import sun.misc.Cache;
+// import sun.misc.Cache;
 
 import javax.mail.internet.AddressException;
 import java.util.*;
