@@ -92,6 +92,15 @@
     </script>
     <script src="./pageTester.js"></script>
 </div>
+    <!--
+	<div class="trigger" id="show-trigger">&#8592;</div>
+        <script>
+            var RAP_ROOT = '$consts.DOMAIN_URL$!projectContext/mockjs/$!projectId';
+            document.getElementById("txtRootPath").value = RAP_ROOT;
+            var PROJECT_ID = $!projectId;
+        </script>
+        <script src="./pageTester.js"></script> 
+	-->
 #bodyEnd
 <foot>
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
